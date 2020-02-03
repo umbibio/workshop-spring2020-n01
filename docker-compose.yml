@@ -1,0 +1,8 @@
+version: '3'
+services:
+  lab-server:
+    image: "umbibio/workshop:argenis"
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./data:/data"
