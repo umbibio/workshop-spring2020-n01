@@ -1,7 +1,10 @@
 version: '3'
 services:
   lab-server:
-    image: "umbibio/workshop:argenis"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: "umbibio/workshop:git-docker"
     ports:
       - "8888:8888"
     volumes:
