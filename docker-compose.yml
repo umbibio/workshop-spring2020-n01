@@ -1,10 +1,10 @@
 version: '3'
 services:
   lab-server:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    image: "umbibio/workshop:git-docker"
+    # build:
+    #   context: ./reinforcement-learning_tf2
+    #   dockerfile: Dockerfile
+    image: "umbibio/reinforcement-learning:tf2"
     ports:
       - "8888:8888"
     volumes:
